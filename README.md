@@ -1,6 +1,4 @@
-# keyring_tools
-
-Keyring Tools
+# Keyring Tools
 
 [v1.0](https://github.com/RacerJay/keyring_tools/tree/main/v1.0)
 
