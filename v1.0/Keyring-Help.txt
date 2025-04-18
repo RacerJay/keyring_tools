@@ -1,0 +1,98 @@
+Keyring-Help.txt
+
+To install keyring:
+	pip install -r requirements.txt
+	pip install keyring
+
+Supported credential stores:
+	macOS Keychain
+	Windows Credential Locker
+	Freedesktop Secret Service supports many DE including GNOME (requires secretstorage)
+	KDE4 & KDE5 KWallet (requires dbus)
+
+Reference:
+	https://pypi.org/project/keyring/
+
+===================================================================================================================================
+NAME
+       set_cred.py
+
+DESCRIPTION
+       Create a password in the local credential store.
+
+SYNOPSIS
+       > python set_cred.py -h
+
+usage: set_cred.py [-h] [--version] CredentialStoreName Username Password
+
+positional arguments:
+  CredentialStoreName  Credential "System" name
+  Username             User name in the credential store
+  Password             Password for the User name in the credential store
+
+options:
+  -h, --help           show this help message and exit
+  --version            show program's version number and exit
+
+===================================================================================================================================
+NAME
+       get_cred.py
+
+DESCRIPTION
+       Retrieve a password from the local credential store.
+
+SYNOPSIS
+       > python get_cred.py -h
+
+usage: get_cred.py [-h] [--version] CredentialStoreName Username
+
+positional arguments:
+  CredentialStoreName  Credential "System" name
+  Username             User name in the credential store
+
+options:
+  -h, --help           show this help message and exit
+  --version            show program's version number and exit
+
+===================================================================================================================================
+NAME
+       del_cred.py
+
+DESCRIPTION
+       Delete a password from the local credential store.
+
+SYNOPSIS
+       > python del_cred.py -h
+
+usage: del_cred.py [-h] [--version] CredentialStoreName Username
+
+positional arguments:
+  CredentialStoreName  Credential "System" name
+  Username             User name in the credential store
+
+options:
+  -h, --help           show this help message and exit
+  --version            show program's version number and exit
+
+===================================================================================================================================
+
+AUTHOR
+       Written by Jason Thomaschefsky.
+
+REPORTING BUGS
+       jason.thomaschefsky@cdw.com
+
+COPYRIGHT
+       Copyright (C) 2022 CDW, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+
+EXAMPLE
+	   python set_cred.py MyCreds admin SUPerSecRetPwd
+
+	   python get_cred.py MyCreds admin
+
+	   python del_cred.py MyCreds admin
+
+SEE ALSO
+       Full documentation at: <https://github.com/cdwlabs/Mid-America-EN-Sandbox/tree/main/keyring-tools/v1.0/>
+       or available locally via: README.md

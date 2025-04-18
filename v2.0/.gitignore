@@ -1,0 +1,24 @@
+# Ignore everything
+*
+
+# Ignore cache
+__pycache__
+*.pyc
+
+# Ignore folders from venv
+bin/
+include/
+lib/
+pyvenv.cfg
+
+# Ignore files
+.DS_Store
+Thumbs.db
+
+# Includes
+!.gitignore
+!keyring_tools.py
+!LICENSE
+!README.md
+!requirements.txt
+!sample_bulk_file.csv
