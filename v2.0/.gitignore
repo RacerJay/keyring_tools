@@ -23,3 +23,4 @@ Thumbs.db
 !requirements.txt
 !sample_bulk_file.csv
 !images/
+!images/**
