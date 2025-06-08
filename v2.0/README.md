@@ -1,5 +1,7 @@
 # Keyring Tools
 
+![Logo](./images/keyring_tools.png)
+
 ![Version](https://img.shields.io/badge/version-v2.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
